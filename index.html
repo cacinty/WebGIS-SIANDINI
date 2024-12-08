@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>SIANDINI</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo_nganjuk.jpg" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation" style="background-color: green;">
+                Menu
+                <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#peta industri">Peta Industri</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#industri populer">Industri
+                            Populer</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#kunjungi kami">Kunjungi Kami</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" data-toggle="modal"
+                            data-target="#creatorModal">Info</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="creatorModal" tabindex="-1" role="dialog" aria-labelledby="creatorModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="creatorModalLabel">Biodata Pembuat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/img/caca_profil.jpg" alt="Foto Pembuat" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p>Nama: CACA CINTIYA BELA</p>
+                            <p>NIM : 23/515886/SV/22634</p>
+                            <p>Github: <a href="https://github.com/cacinty" target="_blank"
+                                    rel="noopener noreferrer">https://github.com/cacinty</a></p>
+                            <p>Email: cacacintiyabela@gmail.com</p>
+                            <p>Deskripsi: Mahasiswi D4 Sistem Informasi Geografis SV UGM dari Kabupaten nganjuk Provinsi
+                                Jawa Timur </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        document.querySelectorAll('.js-scroll-trigger').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').slice(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Selamat Datang Cah !!</div>
+            <div class="masthead-heading text-uppercase">SISTEM INFORMASI ANALISIS DIGITAL NGANJUK INDUSTRI!</div>
+            <a class="btn btn-success btn-xl text-uppercase js-scroll-trigger" href="#beranda">Get Started</a>
+        </div>
+    </header>
+    <!-- Beranda -->
+    <section class="page-section" id="beranda">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Beranda</h2>
+            </div>
+            <div class="row text-center d-flex justify-content-center">
+                <div class="col-md-3 mb-4 d-flex flex-column align-items-center">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-success"></i>
+                        <i class="fas fa-map fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Deskripsi Wilayah</h4>
+                    <p class="text-muted">Menyajikan administrasi dari wilayah kajian yaitu Kabupaten Nganjuk.</p>
+                    <!-- Mengubungkan halaman peta -->
+                    <a href="kabupaten_nganjuk/index.html" class="btn btn-success">Jelajahi Peta</a>
+                </div>
+                <div class="col-md-3 mb-4 d-flex flex-column align-items-center">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-success"></i>
+                        <i class="fas fa-industry fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Peta Industri</h4>
+                    <p class="text-muted">Menyajikan persebaran titik industri Kabupaten Nganjuk yang dapat
+                        dianalisis lanjut.</p>
+                    <!-- Mengubungkan halaman peta persebaran industri (seluruhnya) -->
+                    <a href="persebaran_industri/album/webgisbs.html" class="btn btn-success">Jelajahi Peta</a>
+                </div>
+                <div class="col-md-3 mb-4 d-flex flex-column align-items-center">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-success"></i>
+                        <i class="fas fa-bars fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Pelaporan</h4>
+                    <p class="text-muted">Menyajikan form pelaporan industri baru di Kabupaten Nganjuk</p>
+                    <!-- Mengubungkan halaman peta persebaran industri (seluruhnya) -->
+                    <a href="pelaporan_industri/index.html" class="btn btn-success">Jelajahi Peta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- peta industri-->
+    <section class="page-section bg-light" id="peta industri">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Peta Industri</h2>
+                <h3 class="section-subheading text-muted">Menyajikan informasi persebaran Industri berdasarkan
+                    kategorinya.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"
+                                        style="color: green;"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/barang.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">
+                                <h4>Industri Barang Konsumsi dan Rumah Tangga</h4>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">Kelompok ini mencakup industri yang
+                                berfokus pada pembuatan barang-barang yang digunakan secara langsung oleh konsumen.
+                                Barang-barang ini dapat berupa makanan dan minuman, serta produk rumah tangga.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"
+                                        style="color: green;"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/bahan_baku.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">
+                                <h4>Industri Bahan Baku dan Kemasan</h4>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">Kelompok ini mencakup industri yang
+                                mengolah bahan mentah menjadi barang setengah jadi yang dapat digunakan oleh industri
+                                lain atau sebagai bahan baku untuk produk akhir.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"
+                                        style="color: green;"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/lain.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">
+                                <h4>Industri Teknologi dan Khusus</h4>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">Kelompok ini berfokus pada produksi
+                                barang-barang yang lebih spesifik, seperti produk aksesoris dan perlengkapan pribadi,
+                                barang-barang teknis dan industri, serta produk hasil peternakan.</div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+    <!-- industri populer-->
+    <section class="page-section" id="industri populer">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Industri Populer</h2>
+                <h3 class="section-subheading text-muted">Berikut merupakan 3 industri besar di Kabupaten Nganjuk.
+                </h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/sepatu.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">PT. Kharisma Baru Indonesia</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" style="text-align: justify;">PT. Kharisma Baru Indonesia adalah sebuah
+                                perusahaan yang berfokus
+                                pada produksi sepatu. Pabrik perusahaan ini berlokasi di dusun Morobau, yang merupakan
+                                salah satu dusun yang berada di Kecamatan Bagor, Kabupaten Ngankjuk. PT. Kharisma Baru
+                                Indonesia
+                                dikenal karena keunggulan dalam pembuatan berbagai jenis sepatu, memenuhi kebutuhan
+                                pasar lokal maupun ekspor. Dengan fasilitas produksi yang modern dan tenaga kerja
+                                terampil, perusahaan ini mampu menghasilkan sepatu berkualitas tinggi yang mencakup
+                                berbagai desain dan model. Lokasi pabrik di dusun Morobau memungkinkan akses yang baik
+                                ke bahan baku serta jaringan distribusi yang efektif, menjadikan PT. Kharisma Baru
+                                Indonesia sebagai salah satu pemain utama dalam sektor industri sepatu di daerah
+                                tersebut.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/karung.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">PT Gunawan Fajar </h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" style="text-align: justify;">PT Gunawan Fajar Nganjuk adalah
+                                perusahaan yang bergerak dalam
+                                produksi berbagai jenis kemasan plastik. Perusahaan ini memproduksi karung plastik yang
+                                digunakan untuk mengemas produk seperti beras, kalsium, soda ash, pakan ternak, dan
+                                pupuk. Selain itu, PT Gunawan Fajar Nganjuk juga menghasilkan kain terpal yang sering
+                                digunakan dalam berbagai aplikasi, termasuk pertanian dan industri. Di samping itu,
+                                perusahaan ini memiliki lini produksi untuk sling belt, sling bag, dan jumbo bag dengan
+                                kapasitas mulai dari 500 kilogram hingga 2000 kilogram. Dengan fasilitas produksi yang
+                                modern dan tenaga kerja terampil, PT Gunawan Fajar Nganjuk memastikan produk-produk
+                                berkualitas tinggi yang dapat memenuhi kebutuhan pasar lokal maupun ekspor.
+                                Produk-produk mereka sangat beragam dan dapat mendukung berbagai sektor, termasuk
+                                agrikultur dan industri.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/rokok.jpg"
+                            alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">PR. Mangga Gandeng</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" style="text-align: justify;">PR. Mangga Gandeng merupakan salah satu
+                                pabrik penghasil rokok legendaris di Nganjuk, dikenal sebagai rokok murah yang menjadi
+                                andalan
+                                masyarakat setempat selama bertahun-tahun. Selama lebih dari satu dekade, rokok kretek
+                                non-filter ini telah menjadi pilihan populer bagi konsumen lokal, berkat rasa dan
+                                kualitas yang khas serta harga yang terjangkau. Meskipun banyak pilihan rokok lainnya di
+                                pasar, Mangga Gandeng tetap mempertahankan eksistensinya dengan produk kretek non-filter
+                                sebagai ciri khasnya, menjaga loyalitas pelanggannya di wilayah tersebut. Perusahaan ini
+                                dikenal karena komitmennya dalam mempertahankan tradisi produksi rokok lokal yang
+                                otentik dan mengedepankan citarasa yang sesuai dengan preferensi masyarakat Nganjuk.</p>
+                        </div>
+                    </div>
+    </section>
+    <!-- kunjungi kami-->
+    <section class="page-section bg-light" id="kunjungi kami">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Kunjungi Kami</h2>
+                <h3 class="section-subheading text-muted">Untuk informasi lebih lanjut kunjungi akun media sosial kami.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/info_nganjuk.jpg" alt="" />
+                        <h4>Info Nganjuk</h4>
+                        <p></p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/infonganjuk/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/asli_nganjuk.jpg" alt="" />
+                        <h4>Asli Nganjuk</h4>
+                        <p></p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/asli.nganjuk/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/nganjuk_kotabayu.jpg" alt="" />
+                        <h4>Nganjuk Kotabayu</h4>
+                        <p></p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/nganjukkotabayu/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">CACA CINTIYA BELA | 23/515886/SV/22634 </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/cacinty_/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    <h4>Sistem Informasi Geografi</h4> Universitas Gadjah
+                    Mada
+                </diV>
+            </div>
+
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Industri Barang Konsumsi dan Rumah Tangga</h2>
+                                <!-- GANTI REFERENSI PETA-->
+                                <a href="peta_konsumen/index.html" class="btn btn-success"
+                                    style="margin-bottom: 20px;">Jelajahi Peta</a>
+
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/industri_barang.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> Industri Barang Konsumsi dan Rumah Tangga merupakan
+                                    sektor industri yang memproduksi
+                                    barang-barang yang langsung digunakan oleh konsumen akhir. Produk yang dihasilkan
+                                    mencakup kebutuhan sehari-hari, seperti makanan, minuman, pakaian, alat kebersihan,
+                                    perabotan rumah tangga, hingga produk elektronik kecil. Industri ini memainkan peran
+                                    penting dalam perekonomian karena permintaan konsumen yang konsisten dan
+                                    berkelanjutan. Selain itu, sektor ini sangat bergantung pada inovasi untuk memenuhi
+                                    kebutuhan pasar yang dinamis dan bersaing dalam memberikan nilai tambah, seperti
+                                    keinginan produk, kemasan ramah lingkungan, dan fitur modern. Pengaruh gaya hidup,
+                                    tingkat pendapatan, dan tren pasar sering menjadi faktor utama dalam mendorong
+                                    perkembangan industri ini. Di Indonesia, sektor ini memiliki peluang besar karena
+                                    populasi yang besar dan meningkatnya daya beli masyarakat, terutama di kalangan
+                                    kelas menengah.
+                                <h4 style="text-align: justify;">1. PT. Kharisma Baru Indonesia </h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sepatu_bagor.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">
+                                    PT. Kharisma Baru Indonesia adalah sebuah industri yang terletak di Kecamatan Bagor,
+                                    Kabupaten Nganjuk, tepatnya di Jl. Guyangan 88, Kerepkidul, Bagor, Nganjuk, Jawa
+                                    Timur. Perusahaan ini bergerak di bidang pembuatan sepatu dan berperan sebagai salah
+                                    satu kontributor dalam sektor manufaktur di daerah tersebut. Dengan fokus pada
+                                    produksi sepatu, PT. Kharisma Baru Indonesia memenuhi kebutuhan pasar lokal maupun
+                                    nasional, serta mendukung perekonomian daerah melalui penyediaan lapangan kerja bagi
+                                    sekitar masyarakat. Selain itu, keberadaannya di kawasan strategis memberikan
+                                    aksesibilitas yang baik untuk mendistribusikan produk. Sebagai bagian dari industri
+                                    kreatif dan manufaktur, PT. Kharisma Baru Indonesia terus berupaya menjaga kualitas
+                                    produk sekaligus mengikuti perkembangan tren mode dan teknologi dalam industri
+                                    sepatu.
+                                </p>
+
+                                <h4 style="text-align: justify;">2. PT. Tirta Sukses Perkasa </h4>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/portfolio/Tirta_Sukses_Perkasa.jpg" alt="" />
+                                <p style="text-align: justify;">
+                                    Air minum dalam kemasan (AMDK) adalah air baku yang telah diproses, dikemas, dan
+                                    aman diminum mencakup udara mineral dan udara demineral. PT. Tirta Sukses Perkasa
+                                    merupakan salah satu perusahaan swasta nasional yang memproduksi air mineral dengan
+                                    merek utama “Club” dengan kemasan cup dan galon. PT. Tirta Sukses Perkasa telah
+                                    berdiri sejak tahun 1986. PT. Tirta Sukses Perkasa terletak di Jalan Raya
+                                    Madiun-Surabaya km. 115,9 Desa Pehserut, Kecamatan Sukomoro, Kabupaten Nganjuk, Jawa
+                                    Timur. PT. Tirta Sukses Perkasa menerapkan struktur organisasi lini dan fungsional.
+                                    Tenaga kerja di PT. Tirta Sukses Pekasa terdiri dari bagian engineering, QC,
+                                    produksi, gudang, kantor, keamanan, umum, sopir dan satpam. Bahan baku yang
+                                    digunakan oleh PT. Tirta Sukses Perkasa diperoleh dari sumber air yang berasal dari
+                                    sumur dengan kedalaman ±110 m. Proses produksi AMDK di PT. Tirta Sukses Perkasa
+                                    meliputi klorinasi, pelindung, ozonisasi, filtrasi, desinfeksi sinar ultraviolet
+                                    (UV), dan pengisian. Bahan utama pada kemasan galon adalah polycarbonate (PC), dan
+                                    untuk cup berupa polypropilen (PP). Sanitasi yang diterapkan di PT. Tirta Sukses
+                                    Perkasa meliputi sanitasi peralatan, sanitasi gedung dan lingkungan serta kebersihan
+                                    pribadi. Pengendalian mutu dilakukan dari penerimaan bahan baku, selama proses
+                                    produksi, dan produk akhir yang akan dipasarkan. Limbah di PT. Tirta Sukses Perkasa
+                                    terdiri atas limbah padat dan cair. Limbah padat dapat berupa kemasan cup, galon
+                                    yang berlubang, sisa sealer hingga sisa kardus yang sudah tidak dapat digunakan
+                                    lagi, sedangkan untuk limbah cair berupa sisa air minum yang terbuang selama proses
+                                    pengisian dan air sisa pencucian cup, galon, peralatan pencuci, maupun limbah yang
+                                    berasal dari pengujian sampel yang dilakukan.
+                                </p>
+
+                                <h4 style="text-align: justify;">3. PR. Mangga Gandeng </h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Mangga_Gandeng.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">
+                                    PR. Mangga Gandeng adalah perusahaan rokok lokal yang berlokasi di Desa Patranrejo,
+                                    Kecamatan Berbek, Kabupaten Nganjuk. Perusahaan ini dikenal dengan produk utamanya,
+                                    rokok kretek tanpa filter (SKT), yang sudah menjadi andalan masyarakat Nganjuk
+                                    selama bertahun-tahun. Dengan harga yang terjangkau, sekitar Rp9 ribu per bungkus,
+                                    PR. Mangga Gandeng menjadi pilihan utama bagi konsumen yang mengutamakan penghematan
+                                    biaya, terutama di tengah meningkatnya harga rokok secara umum. Produk dari PR.
+                                    Mangga Gandeng memiliki cita rasa khas yang banyak diapresiasi oleh konsumennya,
+                                    sering dibandingkan dengan rasa rokok kretek premium. Perusahaan ini tidak hanya
+                                    mempertahankan kualitas produk, tetapi juga memberikan dampak ekonomi yang
+                                    signifikan bagi masyarakat sekitar, baik melalui lapangan kerja maupun distribusi
+                                    produk lokal yang meluas.
+                                </p>
+                                <h4 style="text-align: justify;">4. PT. Eagle Sporting Goods</h4>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/portfolio/Eagle_Sporting_Goods.jpg" alt="" />
+                                <p style="text-align: justify;">
+                                    PT. Eagle Sporting Goods adalah perusahaan yang berlokasi di Kecamatan Bagor,
+                                    Kabupaten Nganjuk, yang bergerak di
+                                    bidang industri tas golf. Perusahaan ini dikenal dengan produk berkualitas tinggi
+                                    yang dirancang khusus untuk memenuhi
+                                    kebutuhan para pegolf. Dengan desain inovatif dan material yang tahan lama, PT.
+                                    Eagle Sporting Goods telah mendapatkan
+                                    kepercayaan dari konsumen lokal maupun internasional. Keberadaan perusahaan ini juga
+                                    memberikan kontribusi positif
+                                    terhadap ekonomi lokal melalui penciptaan lapangan kerja dan pengembangan industri
+                                    olahraga.
+                                </p>
+
+                                <h4 style="text-align: justify;">5. PT. Capglobal Industry International</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Capglobal_Industry.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">
+                                    PT. Capglobal Industry International adalah perusahaan yang bergerak di bidang
+                                    industri topi, berlokasi di Kabupaten
+                                    Nganjuk. Perusahaan ini menghasilkan berbagai jenis topi dengan desain modern dan
+                                    kualitas terbaik yang cocok untuk
+                                    berbagai kebutuhan, mulai dari kebutuhan sehari-hari hingga acara khusus. Dengan
+                                    fokus pada inovasi dan kualitas,
+                                    PT. Capglobal Industry International berhasil menarik perhatian konsumen domestik
+                                    maupun internasional, serta berperan
+                                    aktif dalam meningkatkan daya saing produk lokal.
+                                </p>
+
+                                <h4 style="text-align: justify;">6. PT. Zhanhui Jaya Indonesia</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Zhanhui_Jaya.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">
+                                    PT. Zhanhui Jaya Indonesia adalah perusahaan yang berlokasi di Kecamatan Bagor,
+                                    Kabupaten Nganjuk, yang bergerak di
+                                    bidang industri tas golf. Perusahaan ini mengutamakan kualitas dan inovasi dalam
+                                    setiap produk yang dihasilkan, sehingga
+                                    mampu memenuhi kebutuhan pasar baik domestik maupun internasional. Selain memberikan
+                                    produk berkualitas tinggi, PT.
+                                    Zhanhui Jaya Indonesia juga memberikan kontribusi ekonomi lokal melalui penyerapan
+                                    tenaga kerja dan pengembangan
+                                    industri kreatif di wilayah Nganjuk.
+                                </p>
+
+                                <h4 style="text-align: justify;">7. PR. Cengkir Gading</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Cengkir_Gading.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">
+                                    PR. Cengkir Gading adalah industri rokok lokal yang berlokasi di Kabupaten Nganjuk.
+                                    Perusahaan ini memproduksi rokok
+                                    kretek yang telah lama menjadi bagian dari tradisi masyarakat setempat. Dengan harga
+                                    yang kompetitif dan cita rasa yang
+                                    khas, PR. Cengkir Gading menjadi salah satu pilihan favorit di kalangan konsumen.
+                                    Keberadaan perusahaan ini turut
+                                    mendukung perekonomian daerah melalui penciptaan lapangan kerja serta promosi produk
+                                    lokal ke pasar yang lebih luas.
+                                </p>
+
+                                <h4 style="text-align: justify;">8. PT. Bayu Bagus Bakery</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Bayu_Bagus_Bakery.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">
+                                    PT. Bayu Bagus Bakery adalah perusahaan yang bergerak di bidang industri roti,
+                                    berlokasi di Kabupaten Nganjuk.
+                                    Perusahaan ini memproduksi berbagai jenis roti dengan kualitas tinggi yang memenuhi
+                                    selera konsumen. Dengan fokus pada
+                                    bahan baku berkualitas dan proses produksi yang higienis, PT. Bayu Bagus Bakery
+                                    telah menjadi pilihan utama masyarakat
+                                    lokal. Selain itu, perusahaan ini turut berkontribusi dalam pengembangan ekonomi
+                                    daerah melalui penyediaan lapangan
+                                    kerja.
+                                </p>
+
+                                <h4 style="text-align: justify;">9. PT. Sukses Abadi Indonesia</h4>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/portfolio/Sukses_Abadi_Indonesia.jpg" alt="" />
+                                <p style="text-align: justify;">
+                                    PT. Sukses Abadi Indonesia adalah perusahaan yang bergerak di bidang industri
+                                    sepatu, berlokasi di Kabupaten Nganjuk.
+                                    Dengan fokus pada produksi sepatu berkualitas tinggi, perusahaan ini berhasil
+                                    menarik perhatian pasar lokal dan nasional.
+                                    PT. Sukses Abadi Indonesia juga berkomitmen untuk memberikan kontribusi positif
+                                    terhadap masyarakat melalui penciptaan
+                                    lapangan kerja dan peningkatan daya saing produk lokal di sektor industri alas kaki.
+                                </p>
+
+                                <h4 style="text-align: justify;">10. PT. Mitra Saruta Indonesia</h4>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/portfolio/Mitra_Saruta_Indonesia.jpg" alt="" />
+                                <p style="text-align: justify;">
+                                    PT. Mitra Saruta Indonesia adalah perusahaan yang berlokasi di Kabupaten Nganjuk dan
+                                    bergerak di bidang industri sarung
+                                    tangan. Perusahaan ini memproduksi berbagai jenis sarung tangan berkualitas yang
+                                    digunakan untuk kebutuhan domestik dan
+                                    ekspor. Dengan teknologi modern dan bahan berkualitas, PT. Mitra Saruta Indonesia
+                                    berhasil menjadi salah satu pelaku
+                                    industri utama di wilayahnya. Perusahaan ini juga memberikan dampak positif bagi
+                                    perekonomian lokal dengan menyerap
+                                    tenaga kerja dari masyarakat sekitar.
+                                </p>
+
+                                <h4 style="text-align: justify;">11. PR. Putra Masa Depan</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Putra_Masa_Depan.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">
+                                    PR. Putra Masa Depan adalah perusahaan rokok lokal yang berlokasi di Kabupaten
+                                    Nganjuk. Perusahaan ini memproduksi
+                                    rokok dengan kualitas khas yang telah mendapatkan tempat di hati konsumen setempat.
+                                    Dengan harga yang terjangkau dan
+                                    rasa yang otentik, PR. Putra Masa Depan berperan penting dalam mempertahankan
+                                    tradisi industri rokok lokal sekaligus
+                                    mendukung perekonomian daerah melalui penciptaan lapangan kerja.
+                                </p>
+
+                                <h4 style="text-align: justify;">12. PT. Mitra Mulia Makmur</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Mitra_Mulia_Makmur.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">
+                                    PT. Mitra Mulia Makmur adalah perusahaan yang berlokasi di Kabupaten Nganjuk dan
+                                    bergerak di bidang industri tupperware.
+                                    Perusahaan ini memproduksi berbagai produk tupperware berkualitas tinggi yang
+                                    didesain untuk memenuhi kebutuhan rumah
+                                    tangga modern. Dengan fokus pada inovasi dan keberlanjutan, PT. Mitra Mulia Makmur
+                                    telah menjadi salah satu pemain
+                                    utama dalam industri ini, sekaligus memberikan dampak positif bagi masyarakat lokal
+                                    melalui penyediaan lapangan kerja
+                                    dan pengembangan produk ramah lingkungan.
+                                </p>
+                                <button class="btn btn-success" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Industri Bahan Baku dan Kemasan</h2>
+                                <!-- GANTI REFERENSI PETA-->
+                                <a href="peta_baku/index.html" class="btn btn-success"
+                                    style="margin-bottom: 20px;">Jelajahi Peta</a>
+
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/kemasan.jpg" alt="" />
+                                <p style="text-align: justify;">Industri Bahan Baku dan Kemasan adalah sektor yang
+                                    berperan penting dalam mendukung
+                                    berbagai aktivitas manufaktur dan distribusi produk. Industri ini meliputi produksi,
+                                    pengolahan, dan penyediaan bahan dasar yang digunakan untuk menghasilkan kemasan
+                                    seperti plastik, kertas, kaca, logam, dan bahan biodegradable. Peran utamanya adalah
+                                    menyediakan solusi kemasan yang melindungi produk, memperpanjang umur simpan, serta
+                                    mempermudah distribusi. Selain itu, inovasi dalam bahan baku dan kemasan, seperti
+                                    pengembangan bahan ramah lingkungan dan teknologi pengemasan pintar, telah menjadi
+                                    tren utama untuk memenuhi kebutuhan pasar yang semakin sadar akan keinginan.
+                                    Industri ini tidak hanya mendukung sektor makanan dan minuman, tetapi juga mencakup
+                                    farmasi, elektronik, kosmetik, dan banyak sektor lainnya, menjadikannya salah satu
+                                    pilar penting dalam rantai pasok global.
+                                </p>
+
+                                <h4 style="text-align: justify;">1. PT. Indoprima Gemilang Plant 1</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/industri_kabel.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> PT. Indoprima Gemilang Plant 1 adalah perusahaan yang
+                                    bergerak di bidang industri kabel, berlokasi di Kabupaten Nganjuk. Perusahaan ini
+                                    memproduksi berbagai jenis kabel untuk memenuhi kebutuhan industri maupun rumah
+                                    tangga. Dengan fokus pada kualitas dan inovasi, PT. Indoprima Gemilang Plant 1 turut
+                                    mendukung pertumbuhan sektor kelistrikan di Indonesia. Selain itu, keberadaan
+                                    perusahaan ini memberikan kontribusi penting terhadap perekonomian lokal melalui
+                                    penyediaan lapangan kerja dan pengembangan teknologi di bidang kabel. </p>
+
+                                <h4 style="text-align: justify;">2. PT. Sumber Plast Indo</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/industri_plastik.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> PT. Sumber Plast Indo merupakan industri plastik yang
+                                    terletak di Kecamatan Tanjunganom, Kabupaten Nganjuk. Perusahaan ini memproduksi
+                                    berbagai jenis produk plastik, mulai dari kebutuhan rumah tangga hingga kemasan
+                                    industri. Dengan teknologi produksi modern, PT. Sumber Plast Indo mampu menjaga
+                                    kualitas produk sekaligus mendukung upaya pengelolaan limbah plastik yang
+                                    berkelanjutan. Selain memenuhi kebutuhan pasar lokal, perusahaan ini juga
+                                    berkontribusi terhadap ekspor produk plastik ke berbagai wilayah di Indonesia. </p>
+
+                                <h4 style="text-align: justify;">3. PT. Gunawan Fajar</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/karung_jumbo.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> PT. Gunawan Fajar adalah perusahaan yang bergerak di
+                                    bidang industri karung jumbo bag, berlokasi di Kecamatan Lengkong, Kabupaten
+                                    Nganjuk. Produk utama perusahaan ini adalah karung jumbo yang digunakan untuk
+                                    kebutuhan industri besar, seperti pertanian, perkebunan, dan konstruksi. Dengan
+                                    komitmen terhadap kualitas dan daya tahan produk, PT. Gunawan Fajar berhasil menjadi
+                                    salah satu produsen terkemuka di sektor ini, mendukung efisiensi operasional bagi
+                                    pelanggannya. </p>
+
+                                <h4 style="text-align: justify;">4. CV. Rio Karya Wood</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/kayu_lapis.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> CV. Rio Karya Wood adalah perusahaan yang bergerak di
+                                    bidang industri kayu lapis, berlokasi di Kabupaten Nganjuk. Dengan memanfaatkan
+                                    bahan baku berkualitas tinggi, perusahaan ini menghasilkan produk kayu lapis yang
+                                    digunakan untuk berbagai kebutuhan, mulai dari konstruksi hingga furnitur. CV. Rio
+                                    Karya Wood juga berperan aktif dalam menjaga kelestarian lingkungan dengan
+                                    mengadopsi praktik pengelolaan hutan yang berkelanjutan. </p>
+
+                                <h4 style="text-align: justify;">5. CV. Cahaya Gemilang Indah</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/kayu_sengon.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> CV. Cahaya Gemilang Indah Loceret adalah industri kayu
+                                    sengon yang berlokasi di Kecamatan Loceret, Kabupaten Nganjuk. Perusahaan ini
+                                    memproduksi kayu sengon berkualitas tinggi yang digunakan untuk berbagai keperluan,
+                                    seperti bahan baku furnitur dan konstruksi ringan. Dengan fokus pada pengolahan kayu
+                                    yang ramah lingkungan, CV. Cahaya Gemilang Indah mendukung sektor industri kayu
+                                    lokal sekaligus menjaga keberlanjutan sumber daya alam. </p>
+
+                                <h4 style="text-align: justify;">6. PT. Kerta Rajasa Raya</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/karung_jumbo2.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> PT. Kerta Rajasa Raya adalah industri karung jumbo bag
+                                    yang berlokasi di Kabupaten Nganjuk. Perusahaan ini dikenal sebagai salah satu
+                                    produsen karung jumbo berkualitas tinggi untuk kebutuhan industri berat, seperti
+                                    pertanian, pertambangan, dan logistik. Dengan fasilitas produksi modern dan fokus
+                                    pada efisiensi, PT. Kerta Rajasa Raya memenuhi kebutuhan pelanggan di tingkat
+                                    nasional maupun internasional. </p>
+
+                                <h4 style="text-align: justify;">7. PT. Arja Kayu Lapis</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/kayu_lapis2.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> PT. Arja Kayu Lapis adalah perusahaan yang bergerak di
+                                    bidang industri kayu lapis, berlokasi di Kabupaten Nganjuk. Produk kayu lapis dari
+                                    perusahaan ini banyak digunakan di sektor konstruksi dan furnitur. Dengan teknologi
+                                    pengolahan kayu yang canggih, PT. Arja Kayu Lapis berkomitmen untuk menghasilkan
+                                    produk yang tahan lama dan ramah lingkungan, sekaligus mendukung pengelolaan hutan
+                                    yang berkelanjutan. </p>
+
+                                <h4 style="text-align: justify;">8. PT. Sinar Jaya Prima Perkasa</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/karung.jpg" alt="" />
+                                <p style="text-align: justify;"> PT. Sinar Jaya Prima Perkasa adalah perusahaan yang
+                                    bergerak di bidang industri karung, berlokasi di Kabupaten Nganjuk. Perusahaan ini
+                                    memproduksi karung berkualitas tinggi yang digunakan untuk kebutuhan industri
+                                    pertanian, perdagangan, dan logistik. Dengan inovasi dalam desain dan bahan, PT.
+                                    Sinar Jaya Prima Perkasa berusaha memenuhi kebutuhan pasar domestik dan
+                                    internasional. </p>
+
+                                <h4 style="text-align: justify;">9. CV. Risqi Lumintu Plywood</h4> <img
+                                    class="img-fluid d-block mx-auto" src="assets/img/portfolio/kayu_lapis3.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;"> CV. Risqi Lumintu Plywood adalah perusahaan yang
+                                    bergerak di bidang industri kayu lapis, berlokasi di Kabupaten Nganjuk. Perusahaan
+                                    ini memproduksi plywood berkualitas tinggi yang banyak digunakan untuk keperluan
+                                    konstruksi dan interior. Dengan perhatian khusus pada pengelolaan bahan baku yang
+                                    berkelanjutan, CV. Risqi Lumintu Plywood mendukung praktik industri yang ramah
+                                    lingkungan dan berorientasi pada masa depan. </p>
+
+                                <button class="btn btn-success" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here-->
+                                <h2 class="text-uppercase">Industri Teknologi dan Lain-lain</h2>
+                                <a href="peta_teknologi/index.html" class="btn btn-success">Jelajahi Peta</a>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/industri_teknologi.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">Industri Teknologi dan Lain-lain adalah kelompok
+                                    industri yang mencakup berbagai
+                                    sektor dengan fokus pada pengembangan, produksi, atau penerapan teknologi dalam
+                                    proses operasionalnya, serta sektor-sektor lain yang tidak masuk dalam kategori
+                                    industri utama. Industri ini melibatkan aktivitas yang beragam, mulai dari
+                                    manufaktur komponen elektronik, pengolahan bahan mentah, hingga produksi barang jadi
+                                    yang menggunakan pendekatan teknologi modern. Secara umum, kategori ini mencakup
+                                    industri yang berperan dalam inovasi dan efisiensi proses produksi, baik di bidang
+                                    teknologi tinggi seperti elektronik dan otomasi maupun sektor tradisional yang
+                                    memanfaatkan teknologi untuk meningkatkan kualitas dan kapasitas produksinya.</p>
+
+                                <h4 style="text-align: justify;">1. PT. Lotus Indah Textile Industries</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/industri_benang.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">PT. Lotus Indah Textile Industries adalah perusahaan
+                                    yang bergerak di bidang industri benang, berlokasi di Sukomoro. Perusahaan ini
+                                    memproduksi berbagai jenis benang berkualitas tinggi yang digunakan sebagai bahan
+                                    baku dalam industri tekstil. Dengan fokus pada efisiensi dan inovasi, PT. Lotus
+                                    Indah Textile Industries mendukung pertumbuhan sektor tekstil nasional sekaligus
+                                    memberikan kontribusi pada perekonomian lokal melalui penciptaan lapangan kerja.</p>
+
+                                <h4 style="text-align: justify;">2. PT. Sinar Baja Electric</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/industri_speaker.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">PT. Sinar Baja Electric adalah perusahaan yang bergerak
+                                    di bidang industri pembuatan speaker, berlokasi di Lengkong. Perusahaan ini
+                                    memproduksi berbagai jenis speaker berkualitas tinggi yang memenuhi kebutuhan pasar
+                                    domestik dan internasional. Dengan komitmen pada kualitas dan teknologi, PT. Sinar
+                                    Baja Electric menjadi salah satu pemain utama dalam industri audio di Indonesia.</p>
+
+                                <h4 style="text-align: justify;">3. PT. Kapasari</h4>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/portfolio/industri_percetakan.jpg" alt="" />
+                                <p style="text-align: justify;">PT. Kapasari adalah perusahaan yang bergerak di bidang
+                                    industri percetakan, dengan spesialisasi pada produk-produk cetakan berkualitas
+                                    tinggi. Berlokasi di Kabupaten Nganjuk, perusahaan ini melayani berbagai kebutuhan
+                                    percetakan untuk sektor bisnis dan komersial. Dengan inovasi di bidang desain dan
+                                    teknologi percetakan, PT. Kapasari terus mendukung berbagai sektor industri melalui
+                                    layanan cetaknya.</p>
+
+                                <h4 style="text-align: justify;">4. PT. Jaya Kertas</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/industri_kertas.jpg"
+                                    alt="" />
+                                <p style="text-align: justify;">PT. Jaya Kertas adalah perusahaan yang bergerak di
+                                    bidang industri kertas, berlokasi di Kabupaten Nganjuk. Perusahaan ini memproduksi
+                                    berbagai jenis kertas berkualitas tinggi yang digunakan untuk kebutuhan sehari-hari,
+                                    pendidikan, dan bisnis. Dengan pendekatan ramah lingkungan dan teknologi modern, PT.
+                                    Jaya Kertas berkomitmen untuk menyediakan produk kertas yang berkelanjutan bagi
+                                    masyarakat Indonesia.</p>
+
+                                <h4 style="text-align: justify;">5. PT. Wonokoyo Jaya Corporindo Hatchery</h4>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/portfolio/industri_peternakan.jpg" alt="" />
+                                <p style="text-align: justify;">PT. Wonokoyo Jaya Corporindo Hatchery adalah perusahaan
+                                    yang bergerak di bidang industri peternakan ayam, berlokasi di Nganjuk. Perusahaan
+                                    ini memfokuskan pada pembibitan ayam dengan teknologi modern untuk mendukung
+                                    produksi ayam berkualitas tinggi. Keberadaan PT. Wonokoyo Jaya Corporindo Hatchery
+                                    tidak hanya mendukung sektor peternakan nasional tetapi juga memberikan kontribusi
+                                    signifikan terhadap perekonomian lokal melalui inovasi dan penyediaan lapangan
+                                    kerja.</p>
+
+                                <button class="btn btn-success" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
