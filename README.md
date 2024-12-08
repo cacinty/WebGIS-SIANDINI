@@ -20,6 +20,7 @@ Measure: Mengukur jarak antar titik industri secara langsung di peta.
 Mouse Position: Menampilkan koordinat lokasi sesuai posisi kursor pada peta.
 Routing: Memberikan navigasi rute antar titik industri untuk mempermudah perencanaan perjalanan.
 Search: Memungkinkan pencarian lokasi titik industri berdasarkan nama kecamatan atau atribut lainnya.
+
 d. Sumber Data
 Sumber data yang digunakan dalam website SIANDINI diperoleh dari dua sumber utama, yaitu:
 
@@ -28,10 +29,39 @@ Data BPS Kabupaten Nganjuk: Sebagai pendukung dalam validasi informasi terkait i
 Penggabungan kedua sumber data ini memastikan bahwa informasi yang ditampilkan pada website akurat dan dapat diandalkan.
 
 e. Tangkapan Layar Komponen Penting Produk
-Website SIANDINI dilengkapi dengan berbagai tangkapan layar yang menunjukkan fitur utama dan komponen penting produk, seperti:
 
-Tampilan utama yang memperlihatkan peta persebaran industri di Kabupaten Nganjuk.
+Website SIANDINI dilengkapi dengan fitur utama dan komponen penting produk, seperti:
+Halaman Utama
+![image](https://github.com/user-attachments/assets/2925220d-0d07-468a-af72-71e828c2ac1e)
+Beranda
+![image](https://github.com/user-attachments/assets/ea108f25-39ca-490c-8227-4d5c0e667011)
+Kategori Industri
+![image](https://github.com/user-attachments/assets/ba85a8e7-1f61-4fee-9169-e16fe9368bc8)
+Industri Populer
+![image](https://github.com/user-attachments/assets/e404c5e6-7623-43e1-81fb-b5b5716a4f70)
+Informasi Lanjut
+![image](https://github.com/user-attachments/assets/470b457a-be68-48b3-8fa4-8427b0028fd7)
+![image](https://github.com/user-attachments/assets/b7921cc6-3974-4dd9-acce-5f1ccf5770e1)
+
+
+Tampilan utama yang administrasi di Kabupaten Nganjuk.
+![image](https://github.com/user-attachments/assets/e05c890a-625a-44d3-9e91-4473fae4c0a7)
+Grafik Jumlah Persebaran
+![image](https://github.com/user-attachments/assets/631056c6-2c07-49f6-9e52-369059b319a9)
+
+
 Fitur analisis, seperti navigasi rute antar titik industri, pengukuran jarak langsung di peta, dan pengelompokan titik industri berdasarkan posisi.
-Antarmuka pencarian lokasi industri berdasarkan kecamatan, yang membantu pengguna menemukan data yang dibutuhkan dengan mudah.
-Fitur pelaporan yang memungkinkan pengguna menambah, mengedit, atau menghapus data melalui interaksi dengan database.
-Website ini dirancang untuk memberikan solusi informasi yang komprehensif dan membantu proses pengambilan keputusan berbasis data di Kabupaten Nganjuk.
+![image](https://github.com/user-attachments/assets/253d4353-e819-440b-9270-5b525b50d347)
+Fitur Pengukuran Jarak
+![image](https://github.com/user-attachments/assets/face8065-4797-40ec-96c7-938bb1cb3550)
+Fitur MarkerCluster
+![image](https://github.com/user-attachments/assets/aedbe07a-faac-4b85-a1ab-219b8816c9f8)
+Fitur EasyPrint
+![image](https://github.com/user-attachments/assets/277e5962-aef9-4e3a-89cf-6d9aefe8ec89)
+
+Fitur pelaporan yang memungkinkan pembuatan peta partisipatif titik industri dengan menambah data berdasarkan lokasi pengirim melalui interaksi dengan database.
+![image](https://github.com/user-attachments/assets/05b2723e-efb9-4cef-9417-5216349db4d6)
+Titik hasil pelaporan
+![image](https://github.com/user-attachments/assets/29022eeb-53d2-4460-aef2-4305000c6707)
+
+Website ini dirancang untuk memberikan solusi informasi yang komprehensif dan membantu proses pengambilan keputusan berbasis data dan lokasi di Kabupaten Nganjuk.
