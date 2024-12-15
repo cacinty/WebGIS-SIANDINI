@@ -44,7 +44,7 @@ Informasi Lanjut
 ![image](https://github.com/user-attachments/assets/b7921cc6-3974-4dd9-acce-5f1ccf5770e1)
 
 
-Tampilan utama yang administrasi di Kabupaten Nganjuk.
+Tampilan utama administrasi di Kabupaten Nganjuk.
 ![image](https://github.com/user-attachments/assets/e05c890a-625a-44d3-9e91-4473fae4c0a7)
 Grafik Jumlah Persebaran
 ![image](https://github.com/user-attachments/assets/631056c6-2c07-49f6-9e52-369059b319a9)
